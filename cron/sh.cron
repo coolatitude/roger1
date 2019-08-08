@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+MAILTO=root
+
+0 4 * * 0		root	/home/pvanderl/roger/cron/update.sh
+@reboot			root	/home/pvanderl/roger/cron/update.sh
+0 0 * * *		root	/home/pvanderl/roger/cron/check.sh
