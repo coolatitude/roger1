@@ -1,2 +1,1 @@
-# test
-echo "42"
+git clone https://github.com/coolatitude/roger1 ~/.roger
