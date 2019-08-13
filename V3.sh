@@ -1,10 +1,10 @@
 PAT="~/.roger/V3/"
 #network configuration
 apt remove ifupdown
-cp ${PAT}99-disable-network-config.cfg /etc/cloud/cloud.cfg.d/
+sudo cp ${PAT}99-disable-network-config.cfg /etc/cloud/cloud.cfg.d/
 mkdir ~/.roger/trash
-mv /etc/netplan/* ~/.roger/trash
-cp ${PAT}01-network-card.yaml /etc/netplan/
+sudo mv /etc/netplan/* ~/.roger/trash
+sudo cp ${PAT}01-network-card.yaml /etc/netplan/
 netplan generate
 netplan apply
 
